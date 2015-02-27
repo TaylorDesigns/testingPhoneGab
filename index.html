@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taylor Designs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/javascript.js"></script>
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+    
+                <!-- Important Owl stylesheet -->
+                <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+                <!-- Default Theme -->
+                <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+                <script src="owl-carousel/owl.carousel.js"></script>
+                <!-- Include js plugin -->
+                <script src="owl-carousel/owl.carousel.min.js"></script>
+    
+    
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    
+      <!--Jquery Mobile-->    
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    
+    
+    <script>
+        //For Scrolling Anchors & Navigation
+            $(function() {
+              $('a[href*=#]:not([href=#])').click(function() {
+                if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                    $('html,body').animate({
+                      scrollTop: target.offset().top - 60
+                    }, 1000);
+                    return false;
+                  }
+                }
+              });
+            });
+        
+        //for slider
+    </script>
+</head>
+<body id="top">
+    <div id="topBar"></div>
+    <div id="nav_desktop" class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid" style="padding:6px 30px 6px 30px"> <!--padding same as h2-->
+            <div class="navbar-header">
+              <a href="#top" class="navbar-brand"><b>Taylor</b>Designs</a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+              <!--<ul class="nav navbar-nav">
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#support">Support</a>
+                </li>
+              </ul>-->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </div>
+          </div>
+    </div>
+    <!--<div id="nav_mobile" class="navbar navbar-inverse navbar-static-top">
+          <div class="container-fluid" style="padding:6px 30px 6px 30px"> <!--padding same as h2--><!--
+            <div class="navbar-header">
+              <a href="#top" class="navbar-brand">TaylorDesigns</a>
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar-main">
+              <!--<ul class="nav navbar-nav">
+                <li>
+                  <a href="#features">Features</a>
+                </li>
+                <li>
+                  <a href="#support">Support</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+            </div>
+          </div>
+    </div>-->
+    <div class="container-fluid">
+        <div class="row">
+            <div id="banner" class="col-xs-12 col-sm-12 col-md-12">
+                <img class="bottomBlack" src="images/image1.jpg" alt="BannerImage" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <div id="projects" class="col-xs-12 col-sm-12 col-md-12 bottomBlack" style="padding-bottom:20px;">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <h2>Projects</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="gallery" class="col-xs-12 col-sm-12 col-md-12">
+                        <div id="owl-demo">
+                          <div class="item" onclick="populateModal('Project1');"><img class="galleryImage" src="testImages/owl1.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project2');"><img class="galleryImage" src="testImages/owl2.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project3');"><img class="galleryImage" src="testImages/owl3.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project1');"><img class="galleryImage" src="testImages/owl4.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project2');"><img class="galleryImage" src="testImages/owl5.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project3');"><img class="galleryImage" src="testImages/owl6.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project1');"><img class="galleryImage" src="testImages/owl7.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                          <div class="item" onclick="populateModal('Project2');"><img class="galleryImage" src="testImages/owl8.jpg" alt="Owl Image"><p class="cap">Caption</p></div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      autoPlay: 3000, //Set AutoPlay to 3 seconds
+ 
+      items : 4,
+      itemsDesktop : [1199,3],
+      itemsDesktopSmall : [979,3],
+      stopOnHover:true,
+      navigation: true,
+      navigationText:["<",">"],
+      pagination : false,
+      
+ 
+  });
+ 
+});</script>
+            </div>
+        </div>
+        <div class="row">
+            <div id="about" class="row">
+                     <div class="col-xs-12 col-sm-12 col-md-12">
+                            <h2>About Taylor Designs</h2>
+                    </div>
+            </div>
+            <div class="row">
+                <div id="info" class="col-xs-12 col-sm-12 col-md-12">
+                    <p>Taylor Designs has a close liaison with a broad range of experienced consultants and building contractors who readily combine together on a project by project basis to provide a total and comprehensive service. We give our clients practical advice to fulfill their briefs and control their budgets and meeting deadlines. Taylor Designs work as a team with our clients to meet our mutual primary objective, to ensure our clients are as proud of their projects as we are.</p>
+                    <p id="about">
+                        <b>t: </b><span id="telephone">+61 (02) 4283 6655</span>
+                        <br/>
+                        <b>e: </b><span id="email">peter@taylordesigns.com.au</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--Modal For Images-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 style="font-weight:bold;" id="modalTitle" class="modal-title">Modal title</h3>
+      </div>
+      <div class="modal-body">
+        <p id="modalDescription" >Body Of Modal</p>
+          <div id="modalImages"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</body>
+</html>
